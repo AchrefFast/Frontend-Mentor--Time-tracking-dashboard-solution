@@ -17,7 +17,7 @@ async function main() {
     const fields = document.querySelector('.fields');
     const field = new FieldBlock();
     var className = '';
-
+    console.log(response);
     for (let i = 0; i < response.length; i++) {
         className = response[i].title.replace(' ', '-').toLowerCase();
         fields.append(field.createBlock(className, response[i].title, response[i].timeframes.weekly.current, response[i].timeframes.weekly.previous));
