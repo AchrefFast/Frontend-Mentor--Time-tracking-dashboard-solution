@@ -3,6 +3,7 @@ import FieldBlock from "./components.js";
 async function main() {
 
     // Load the JSON file.
+    // Here, we need to access the JSON file using the current url of our page to avoid CROS errors.
     var response = await fetch(window.location.href + '/data.json').then(response => response.json());
 
     const frames = document.querySelectorAll('.timeframes');
