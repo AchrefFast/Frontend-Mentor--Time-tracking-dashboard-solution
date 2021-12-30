@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script type="module" src="./src/src.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <h1 style="position: absolute; opacity: 0; user-select: none">
+      Time tracking dashboard
+    </h1>
+    <main class="main">
+      <div class="container">
+        <div class="profile">
+          <div class="profile__upper">
+            <div class="profile__avatar">
+              <img src="./images/image-jeremy.png" alt="profile image" />
+            </div>
+            <div class="profile__body">
+              <p class="profile__report-for">Report for</p>
+              <p class="profile__name">Jeremy Robson</p>
+            </div>
+          </div>
+          <div class="profile__lower">
+            <nav>
+              <ul class="profile__list">
+                <label for="daily">
+                  <input
+                    type="radio"
+                    name="time"
+                    id="daily"
+                    data-time="daily"
+                    class="timeframes"
+                  />
+                  <span>Daily</span>
+                </label>
+                <label for="weekly">
+                  <input
+                    type="radio"
+                    name="time"
+                    id="weekly"
+                    data-time="weekly"
+                    class="timeframes"
+                  />
+                  <span>Weekly</span>
+                </label>
+                <label for="monthly">
+                  <input
+                    type="radio"
+                    name="time"
+                    id="monthly"
+                    data-time="monthly"
+                    class="timeframes"
+                  />
+                  <span>Monthly</span>
+                </label>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="fields"></div>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.frontendmentor.io/profile/AchrefFast">@AchrefFast</a>.
+    </div> -->
+  </body>
+</html>
