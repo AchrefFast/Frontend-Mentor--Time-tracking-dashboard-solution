@@ -11,7 +11,8 @@ async function main() {
             selectedTime = elm.dataset.time;
         }
     });
-    var response = await fetch('../data.json', { mode: 'same-origin', credentials: 'same-origin', headers: { 'Content-Type': 'application/json' } }).then(response => response.json());
+
+    var response = await fetch(window.location.href + '/data.json').then(response => response.json());
 
 
     const fields = document.querySelector('.fields');
